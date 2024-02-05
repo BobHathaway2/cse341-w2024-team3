@@ -1,0 +1,71 @@
+// LOCAL
+### GET home
+GET http://localhost:3001
+
+### GET all stores
+GET http://localhost:3001/stores
+
+### GET specific store
+GET http://localhost:3001/stores/65b454770e9bd46d41178c15
+
+### Add store (POST)
+POST http://localhost:3001/stores
+Content-Type: application/json
+
+{ 
+  "name": "Griz",
+  "breed": "Brazilian Mastiff",
+  "gender": "Male",
+  "color": "Browndsfjadlfjsa;jdfa"
+}
+
+### Update store (PUT)
+PUT http://localhost:3001/stores/65b454770e9bd46d41178c15
+Content-Type: application/json
+
+{ 
+  "name": "Griz",
+  "breed": "Brazilian Mastiff",
+  "gender": "Male",
+  "color": "Brown"
+}
+
+### Delete store
+DELETE http://localhost:3001/stores/<id>
+
+
+
+// PRODUCTION
+### GET home
+GET https://cse341bh-project2.onrender.com
+
+### GET all stores
+GET https://cse341bh-project2.onrender.com/stores
+
+### GET specific store
+GET https://cse341bh-project2.onrender.com/stores/65b454770e9bd46d41178c15
+
+### Add store (POST store)
+POST https://cse341bh-project2.onrender.com/stores
+Content-Type: application/json
+
+{ 
+  "name": "Griz",
+  "breed": "Brazilian Mastiff",
+  "gender": "Male",
+  "color": "Brown"
+}
+
+### Change store information (PUT)
+PUT https://cse341bh-project2.onrender.com/stores/65b454770e9bd46d41178c15
+Content-Type: application/json
+
+{ 
+    "name": "Grizzer",
+    "breed": "Brazilian Mastiff",
+    "gender": "Male",
+    "color": "Brown"
+}
+
+### Remove a store (DELETE)
+DELETE https://cse341bh-project2.onrender.com/stores/<id>
