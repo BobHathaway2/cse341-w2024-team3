@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const storesController = require('../controllers/stores.js');
-const validation = require('../middleware/validate');
-const { isAuthenticated } = require('../middleware/authenticate');
+const validation = require('../middleware/validate.js');
+const { isAuthenticated } = require('../middleware/authenticate.js');
 
 router.get('/:id', validation.checkMongoId, storesController.getSingle);
 router.get('/', storesController.getAll);

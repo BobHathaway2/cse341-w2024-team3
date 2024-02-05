@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const moviesController = require('../controllers/movies.js');
-const validation = require('../middleware/validate');
-const { isAuthenticated } = require('../middleware/authenticate');
+const validation = require('../middleware/validate.js');
+const { isAuthenticated } = require('../middleware/authenticate.js');
 
 router.get('/:id', validation.checkMongoId, moviesController.getSingle);
 router.get('/', moviesController.getAll);
