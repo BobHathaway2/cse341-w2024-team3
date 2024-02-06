@@ -6,6 +6,10 @@ router.use('/', require('./swagger'));
 router.use('/movies', require('./movies'));
 router.use('/stores', require('./stores'));
 
+// Client and Employee
+router.use('/client', require('./client'));
+router.use('/employee', require('./employee'));
+
 router.get('/login', passport.authenticate('github'), (req, res) => {});
 
 router.get('/logout', function (req, res, next) {
