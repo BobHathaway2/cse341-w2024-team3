@@ -23,14 +23,15 @@ const getAll = async (req, res) => {
 const createmovie = async (req, res) => {
   //#swagger.tags=['movies']
   const movie = {
-    year: req.body.year,
-    make: req.body.make,
-    model: req.body.model,
-    color: req.body.color,
-    engine: req.body.engine,
-    transmission: req.body.transmission,
-    gears: req.body.gears,
-    shifter: req.body.shifter
+    Name: req.body.Name,
+    Description: req.body.Description,
+    Director: req.body.Director,
+    DistributedBy: req.body.DistributedBy,
+    ProductionCompany: req.body.ProductionCompany,
+    Cinematography: req.body.Cinematography,
+    BoxOffice: req.body.BoxOffice,
+    ReleaseDate: req.body.ReleaseDate,
+    MusicBy: req.body.MusicBy
   };
   const result = await mongodb.getDatabase().db().collection('movies').insertOne(movie);
   if (result.acknowledged) {
@@ -44,14 +45,15 @@ const updatemovie = async (req, res) => {
   //#swagger.tags=['movies']
   const movieId = new ObjectId(req.params.id);
   const movie = {
-    year: req.body.year,
-    make: req.body.make,
-    model: req.body.model,
-    color: req.body.color,
-    engine: req.body.engine,
-    transmission: req.body.transmission,
-    gears: req.body.gears,
-    shifter: req.body.shifter
+    Name: req.body.Name,
+    Description: req.body.Description,
+    Director: req.body.Director,
+    DistributedBy: req.body.DistributedBy,
+    ProductionCompany: req.body.ProductionCompany,
+    Cinematography: req.body.Cinematography,
+    BoxOffice: req.body.BoxOffice,
+    ReleaseDate: req.body.ReleaseDate,
+    MusicBy: req.body.MusicBy
   };
   const result = await mongodb.getDatabase().db().collection('movies').replaceOne({ _id: movieId }, movie);
   if (result.modifiedCount > 0) {
