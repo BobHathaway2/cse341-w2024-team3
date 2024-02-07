@@ -395,7 +395,7 @@
     "/client/": {
       "get": {
         "tags": [
-          "Clients"
+          "clients"
         ],
         "description": "",
         "produces": [
@@ -409,7 +409,7 @@
       },
       "post": {
         "tags": [
-          "Clients"
+          "clients"
         ],
         "description": "",
         "parameters": [
@@ -457,7 +457,7 @@
     "/client/{id}": {
       "get": {
         "tags": [
-          "Clients"
+          "clients"
         ],
         "description": "",
         "produces": [
@@ -482,7 +482,7 @@
       },
       "put": {
         "tags": [
-          "Clients"
+          "clients"
         ],
         "description": "",
         "parameters": [
@@ -537,7 +537,7 @@
       },
       "delete": {
         "tags": [
-          "Clients"
+          "clients"
         ],
         "description": "",
         "parameters": [
@@ -566,6 +566,9 @@
     },
     "/employee/": {
       "get": {
+        "tags": [
+          "employees"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -577,6 +580,9 @@
         }
       },
       "post": {
+        "tags": [
+          "employees"
+        ],
         "description": "",
         "parameters": [
           {
@@ -622,6 +628,9 @@
     },
     "/employee/{id}": {
       "get": {
+        "tags": [
+          "employees"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -644,6 +653,9 @@
         }
       },
       "put": {
+        "tags": [
+          "employees"
+        ],
         "description": "",
         "parameters": [
           {
@@ -696,6 +708,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "employees"
+        ],
         "description": "",
         "parameters": [
           {
