@@ -25,10 +25,10 @@ const createClient = async (req, res) => {
     const client = {
         FirstName: req.body.FirstName,
         LastName: req.body.LastName,
-        StartedDate: req.body.StartedDate,
-        Pay: req.body.Pay,
-        Contract: req.body.Contract,
-        Age: req.body.Age
+        MovieName: req.body.MovieName,
+        Paid: req.body.Paid,
+        MovieOut: req.body.MovieOut,
+        MovieIn: req.body.MovieIn
     };
     const response = await mongodb.getDatabase().db().collection('clients').insertOne(client);
     if (response.acknowledged) {
@@ -45,10 +45,10 @@ const updateClient = async (req, res) => {
     const client = {
         FirstName: req.body.FirstName,
         LastName: req.body.LastName,
-        StartedDate: req.body.StartedDate,
-        Pay: req.body.Pay,
-        Contract: req.body.Contract,
-        Age: req.body.Age
+        MovieName: req.body.MovieName,
+        Paid: req.body.Paid,
+        MovieOut: req.body.MovieOut,
+        MovieIn: req.body.MovieIn
     };
     const response = await mongodb.getDatabase().db().collection('clients').replaceOne({_id: clientId}, client);
     if (response.modifiedCount > 0) {
