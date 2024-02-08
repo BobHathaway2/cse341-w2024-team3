@@ -9,9 +9,9 @@ router.get('/', employeesController.getAll);
 
 router.get('/:id', validation.checkMongoId, employeesController.getSingle);
 
-router.post('/', isAuthenticated, employeesController.createEmployee); // validation.checkEmployee
+router.post('/', isAuthenticated, validation.saveEmployee, employeesController.createEmployee); // validation.checkEmployee
 
-router.put('/:id', isAuthenticated, validation.checkMongoId, employeesController.updateEmployee);
+router.put('/:id', isAuthenticated, validation.checkMongoId, validation.saveEmployee, employeesController.updateEmployee);
 
 router.delete('/:id', isAuthenticated, validation.checkMongoId, employeesController.deleteEmployee);
 
