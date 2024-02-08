@@ -23,10 +23,11 @@ const getAll = async (req, res) => {
 const createstore = async (req, res) => {
   //#swagger.tags=['stores']
   const store = {
-    name: req.body.name,
-    breed: req.body.breed,
-    gender: req.body.gender,
-    color: req.body.color
+    Name: req.body.Name,
+    Location: req.body.Location,
+    NumMovies: req.body.NumMovies,
+    Rent: req.body.Rent,
+    Employees: req.body.Employees
   };
   const result = await mongodb.getDatabase().db().collection('stores').insertOne(store);
   if (result.acknowledged) {
@@ -40,11 +41,11 @@ const updatestore = async (req, res) => {
   //#swagger.tags=['stores']
   const storeId = new ObjectId(req.params.id);
   const store = {
-    "Name": req.body.Name,
-    "Location": req.body.Location,
-    "NumMovies": req.body.NumMovies,
-    "Rent": req.body.Rent,
-    "Employees": req.body.Employees
+    Name: req.body.Name,
+    Location: req.body.Location,
+    NumMovies: req.body.NumMovies,
+    Rent: req.body.Rent,
+    Employees: req.body.Employees
   };
   const result = await mongodb.getDatabase().db().collection('stores').replaceOne({ _id: storeId }, store);
   if (result.modifiedCount > 0) {

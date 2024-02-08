@@ -1,0 +1,76 @@
+// LOCAL
+### GET home
+GET http://localhost:3001
+
+### GET all employees
+GET http://localhost:3001/employees
+
+### GET specific employee
+GET http://localhost:3001/employees/<any>
+### Add employee (POST)
+POST http://localhost:3001/employees
+Content-Type: application/json
+
+{ 
+    "FirstName": "any",
+    "LastName": "any",
+    "StartedDate": "any",
+    "Pay": "any",
+    "Contract": "any",
+    "Age": "any"
+}
+
+### Update employee (PUT)
+PUT http://localhost:3001/employees/<any>
+Content-Type: application/json
+
+{ 
+    "FirstName": "any",
+    "LastName": "any",
+    "StartedDate": "any",
+    "Pay": "any",
+    "Contract": "any",
+    "Age": "any"
+}
+
+### Delete employee
+DELETE http://localhost:3001/employees/<any>
+
+// PRODUCTION
+### GET home
+GET https://cse341bh-project2.onrender.com
+
+### GET all employees
+GET https://cse341bh-project2.onrender.com/employees
+
+### GET specific employee
+GET https://cse341bh-project2.onrender.com/employees/<any>
+
+### Add employee (POST employee)
+POST https://cse341bh-project2.onrender.com/employees
+Content-Type: application/json
+
+{ 
+    "FirstName": "any",
+    "LastName": "any",
+    "StartedDate": "any",
+    "Pay": "any",
+    "Contract": "any",
+    "Age": "any"
+}
+
+### Change employee information (PUT)
+PUT https://cse341bh-project2.onrender.com/employees/<any>
+Content-Type: application/json
+
+{ 
+    "FirstName": "any",
+    "LastName": "any",
+    "StartedDate": "any",                                                                                                                       
+    "Pay": "any",
+    "Contract": "any",
+    "Age": "any"
+}
+
+### Remove a employee (DELETE)
+DELETE https://cse341bh-project2.onrender.com/employees/<any>

@@ -13,10 +13,11 @@ POST http://localhost:3001/stores
 Content-Type: application/json
 
 { 
-  "name": "Griz",
-  "breed": "Brazilian Mastiff",
-  "gender": "Male",
-  "color": "Browndsfjadlfjsa;jdfa"
+    "Name": "any",
+    "Location": "any",
+    "NumMovies": "any",
+    "Rent": "any",
+    "Employees": "any"
 }
 
 ### Update store (PUT)
@@ -24,10 +25,11 @@ PUT http://localhost:3001/stores/65b454770e9bd46d41178c15
 Content-Type: application/json
 
 { 
-  "name": "Griz",
-  "breed": "Brazilian Mastiff",
-  "gender": "Male",
-  "color": "Brown"
+    "Name": "any",
+    "Location": "any",
+    "NumMovies": "any",
+    "Rent": "any",
+    "Employees": "any"
 }
 
 ### Delete store
@@ -50,10 +52,11 @@ POST https://cse341bh-project2.onrender.com/stores
 Content-Type: application/json
 
 { 
-  "name": "Griz",
-  "breed": "Brazilian Mastiff",
-  "gender": "Male",
-  "color": "Brown"
+    "Name": "any",
+    "Location": "any",
+    "NumMovies": "any",
+    "Rent": "any",
+    "Employees": "any"
 }
 
 ### Change store information (PUT)
@@ -61,10 +64,11 @@ PUT https://cse341bh-project2.onrender.com/stores/65b454770e9bd46d41178c15
 Content-Type: application/json
 
 { 
-    "name": "Grizzer",
-    "breed": "Brazilian Mastiff",
-    "gender": "Male",
-    "color": "Brown"
+    "Name": "any",
+    "Location": "any",
+    "NumMovies": "any",
+    "Rent": "any",
+    "Employees": "any"
 }
 
 ### Remove a store (DELETE)

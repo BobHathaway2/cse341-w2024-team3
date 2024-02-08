@@ -1,0 +1,76 @@
+// LOCAL
+### GET home
+GET http://localhost:3001
+
+### GET all clients
+GET http://localhost:3001/clients
+
+### GET specific client
+GET http://localhost:3001/clients/<any>
+### Add client (POST)
+POST http://localhost:3001/clients
+Content-Type: application/json
+
+{ 
+    "FirstName": "any",
+    "LastName": "any",
+    "MovieName": "any",
+    "Paid": "any",
+    "MovieOut": "any",
+    "MovieIn": "any"
+}
+
+### Update client (PUT)
+PUT http://localhost:3001/clients/<any>
+Content-Type: application/json
+
+{ 
+    "FirstName": "any",
+    "LastName": "any",
+    "MovieName": "any",
+    "Paid": "any",
+    "MovieOut": "any",
+    "MovieIn": "any"
+}
+
+### Delete client
+DELETE http://localhost:3001/clients/<any>
+
+// PRODUCTION
+### GET home
+GET https://cse341bh-project2.onrender.com
+
+### GET all clients
+GET https://cse341bh-project2.onrender.com/clients
+
+### GET specific client
+GET https://cse341bh-project2.onrender.com/clients/<any>
+
+### Add client (POST client)
+POST https://cse341bh-project2.onrender.com/clients
+Content-Type: application/json
+
+{ 
+    "FirstName": "any",
+    "LastName": "any",
+    "MovieName": "any",
+    "Paid": "any",
+    "MovieOut": "any",
+    "MovieIn": "any"
+}
+
+### Change client information (PUT)
+PUT https://cse341bh-project2.onrender.com/clients/<any>
+Content-Type: application/json
+
+{ 
+    "FirstName": "any",
+    "LastName": "any",
+    "MovieName": "any",
+    "Paid": "any",
+    "MovieOut": "any",
+    "MovieIn": "any"
+}
+
+### Remove a client (DELETE)
+DELETE https://cse341bh-project2.onrender.com/clients/<any>
