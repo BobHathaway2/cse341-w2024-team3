@@ -54,11 +54,7 @@ const savemovie = (req, res, next) => {
       StartedDate: 'required|date',
       Pay: 'required|min:1|max:50|string',
       Contract: ['required', { 'in': ["yes", "Yes", "YES", "no", "No", "NO"] }],
-      ProductionCompany: 'required|min:1|max:150|string',
-      Cinematography:  'required|min:1|max:50|string',
-      BoxOffice: 'required|max:150|string',
-      ReleaseDate: 'required|date',
-      MusicBy: 'required|min:1|max:50|string'
+      Age: 'required|min:15|max:120|numeric'
     };
     validator(req.body, validationRule, {}, (err, status) => {
       if (!status) {
