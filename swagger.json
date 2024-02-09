@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Contacts API",
-    "description": "Contacts API",
+    "title": "The Video Store API",
+    "description": "The Video Store API",
     "version": "1.0.0"
   },
   "host": "cse341-w2024-team3.onrender.com",
