@@ -5,22 +5,12 @@
     "description": "The Video Store API",
     "version": "1.0.0"
   },
-  "host": "cse341-w2024-team3.onrender.com",
+  "host": "cse341-w2024-team3.onrender.com/",
   "basePath": "/",
   "schemes": [
-     "https"
+    "https"
   ],
   "paths": {
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
     "/movies/{id}": {
       "get": {
         "tags": [
@@ -65,28 +55,31 @@
             "schema": {
               "type": "object",
               "properties": {
-                "year": {
+                "Name": {
                   "example": "any"
                 },
-                "make": {
+                "Description": {
                   "example": "any"
                 },
-                "model": {
+                "Director": {
                   "example": "any"
                 },
-                "color": {
+                "DistributedBy": {
                   "example": "any"
                 },
-                "engine": {
+                "ProductionCompany": {
                   "example": "any"
                 },
-                "transmission": {
+                "Cinematography": {
                   "example": "any"
                 },
-                "gears": {
+                "BoxOffice": {
                   "example": "any"
                 },
-                "shifter": {
+                "ReleaseDate": {
+                  "example": "any"
+                },
+                "MusicBy": {
                   "example": "any"
                 }
               }
@@ -164,28 +157,31 @@
             "schema": {
               "type": "object",
               "properties": {
-                "year": {
+                "Name": {
                   "example": "any"
                 },
-                "make": {
+                "Description": {
                   "example": "any"
                 },
-                "model": {
+                "Director": {
                   "example": "any"
                 },
-                "color": {
+                "DistributedBy": {
                   "example": "any"
                 },
-                "engine": {
+                "ProductionCompany": {
                   "example": "any"
                 },
-                "transmission": {
+                "Cinematography": {
                   "example": "any"
                 },
-                "gears": {
+                "BoxOffice": {
                   "example": "any"
                 },
-                "shifter": {
+                "ReleaseDate": {
+                  "example": "any"
+                },
+                "MusicBy": {
                   "example": "any"
                 }
               }
@@ -252,16 +248,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "Name": {
                   "example": "any"
                 },
-                "breed": {
+                "Location": {
                   "example": "any"
                 },
-                "gender": {
+                "NumMovies": {
                   "example": "any"
                 },
-                "color": {
+                "Rent": {
+                  "example": "any"
+                },
+                "Employees": {
                   "example": "any"
                 }
               }
@@ -339,16 +338,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "Name": {
                   "example": "any"
                 },
-                "breed": {
+                "Location": {
                   "example": "any"
                 },
-                "gender": {
+                "NumMovies": {
                   "example": "any"
                 },
-                "color": {
+                "Rent": {
+                  "example": "any"
+                },
+                "Employees": {
                   "example": "any"
                 }
               }
@@ -404,16 +406,16 @@
                 "LastName": {
                   "example": "any"
                 },
-                "StartedDate": {
+                "MovieName": {
                   "example": "any"
                 },
-                "Pay": {
+                "Paid": {
                   "example": "any"
                 },
-                "Contract": {
+                "MovieOut": {
                   "example": "any"
                 },
-                "Age": {
+                "MovieIn": {
                   "example": "any"
                 }
               }
@@ -426,6 +428,9 @@
           },
           "401": {
             "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -483,16 +488,16 @@
                 "LastName": {
                   "example": "any"
                 },
-                "StartedDate": {
+                "MovieName": {
                   "example": "any"
                 },
-                "Pay": {
+                "Paid": {
                   "example": "any"
                 },
-                "Contract": {
+                "MovieOut": {
                   "example": "any"
                 },
-                "Age": {
+                "MovieIn": {
                   "example": "any"
                 }
               }
@@ -598,6 +603,9 @@
           },
           "401": {
             "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
