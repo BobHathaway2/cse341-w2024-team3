@@ -76,7 +76,7 @@ const savemovie = (req, res, next) => {
       MovieName:  'required|min:1|max:50|string',
       Paid:  'required|min:1|max:50|string',
       MovieOut: 'required|date',
-      MovieIn: 'required}date'
+      MovieIn: 'required|date'
     };
     validator(req.body, validationRule, {}, (err, status) => {
       if (!status) {
