@@ -5,7 +5,7 @@ const savestore = (req, res, next) => {
     Name: 'required|min:1|max:50|string',
     Location: 'required|min:1|max:50|string',
     NumMovies: 'required|numeric',
-    Rent: 'required|',
+    Rent: 'required|min:1|max:50|string',
     Employees: 'required|numeric'
   };
   validator(req.body, validationRule, {}, (err, status) => {
