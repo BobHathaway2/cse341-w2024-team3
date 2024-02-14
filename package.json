@@ -54,7 +54,7 @@
     "depd": "^2.0.0",
     "destroy": "^1.2.0",
     "doctrine": "^3.0.0",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.4.3",
     "ee-first": "^1.1.1",
     "ejs": "^3.1.9",
     "encodeurl": "^1.0.2",
