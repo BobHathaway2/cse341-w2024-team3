@@ -75,3 +75,5 @@ mongodb.intDb((err) => {
     app.listen(port, () => { console.warn(`Database is listening and Node is running on port ${port}`); });
   }
 });
+
+module.exports = app;
