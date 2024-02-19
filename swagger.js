@@ -5,9 +5,8 @@ const doc = {
     title: 'The Video Store API',
     description: 'The Video Store API'
   },
-  host: 'localhost:3001',
+  host: 'cse341-w2024-team3.onrender.com',
   schemes: [
-    'http',
     'https'
 ]
 };
